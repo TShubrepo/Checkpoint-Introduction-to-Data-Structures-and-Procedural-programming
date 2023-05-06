@@ -1,0 +1,33 @@
+Procedure to calculate dot product
+def dot_product(v1, v2):
+    ps = 0
+    for i in range(len(v1)):
+        ps += v1[i] * v2[i]
+    return ps
+
+n = int(input("Enter the number of vector pairs: "))
+for i in range(n):
+    v1 = list(map(int, input("Enter the first vector: ").split()))
+    v2 = list(map(int, input("Enter the second vector: ").split()))
+    ps = dot_product(v1, v2)
+    if ps == 0:
+        print("The vectors are orthogonal.")
+    else:
+        print("The vectors are not orthogonal.")
+
+Function to calculate dot product
+def dot_product(v1, v2):
+    ps = 0
+    for i in range(len(v1)):
+        ps += v1[i] * v2[i]
+    return ps
+
+n = int(input("Enter the number of vector pairs: "))
+for i in range(n):
+    v1 = list(map(int, input("Enter the first vector: ").split()))
+    v2 = list(map(int, input("Enter the second vector: ").split()))
+    ps = dot_product(v1, v2)
+    if ps == 0:
+        print("The vectors are orthogonal.")
+    else:
+        print("The vectors are not orthogonal.")

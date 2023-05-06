@@ -1,0 +1,25 @@
+tab1 [2, 1, 7, 9]
+tab2 [2, 4, 1, 9]
+
+BEGIN
+
+def SUM exist (T:tab, n:integer, x:integer)
+for
+i <-- 0
+Repeat
+    i <-- i+1
+IF
+     T[""] = x then 
+            return <-- true
+else
+        return <-- false
+
+END IF
+
+UNTIL   (return <-- true) or (i=n)
+        i=i+1
+SUM exist return = true
+
+END 
+
+         
